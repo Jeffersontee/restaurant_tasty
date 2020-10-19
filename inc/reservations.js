@@ -3,7 +3,7 @@ var conn = require("./db");
 
 module.exports = {
 
-  render(req, res, error, success){
+  render(req, res, error, success) {
 
     res.render('reservations', {
       title: 'Reservation - Restaurante Saboroso!',
@@ -18,7 +18,7 @@ module.exports = {
 
     return new Promise((resolve, reject ) => {
 
-      let date = fields.date.split('/');
+      let date = fields.date.split('/');  
 
       fields.date = `${date[2]}-${date[1]}-${[0]}`;
 
